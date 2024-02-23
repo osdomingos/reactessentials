@@ -7,8 +7,8 @@ export default function CoreConcepts({header}) {
         <h2>{header}</h2>
         <section id='core-concepts'>
           <ul>
-            {CORE_CONCEPTS.map(concept => (
-              <li>
+            {CORE_CONCEPTS.map((concept, index) => (
+              <li key={index}>
                 <img src={concept.image} alt={concept.title}></img>
                 <h3>{concept.title}</h3>
                 <p>{concept.description}</p>

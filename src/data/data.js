@@ -13,68 +13,68 @@ export const CORE_CONCEPTS = [
   {
     image: jsxImg,
     title: 'JSX',
-    description:
-      'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
+    description: 'Retorna (potencialmente dinâmico) código HTML para definir a marcação que será realmente renderizada.',
+      // 'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
   },
   {
     image: propsImg,
     title: 'Props',
-    description:
-      'Make components configurable (and therefore reusable) by passing input data to them.',
+    description: 'Faz os componentes serem configuráveis (logo reutilizáveis) ao passar dados de entrada para eles.',
+      // 'Make components configurable (and therefore reusable) by passing input data to them.',
   },
   {
     image: stateImg,
     title: 'Estado',
-    description:
-      'React-managed data which, when changed, causes the component to re-render & the UI to update.',
+    description: 'Dados administrados pelo React que, quando alterados, fazem o componente re-renderizar & a UI atualizar.',
+      // 'React-managed data which, when changed, causes the component to re-render & the UI to update.',
   },
 ];
 
 export const EXAMPLES = {
   components: {
     title: 'Componentes',
-    description:
-      'Components are the building blocks of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.',
+    description: 'Componentes são as peças fundamentais para aplicações React. Um componente é um módulo autocontido (HTML + CSS opcional + JS) que renderiza dados de saída.',
+      // 'Components are the building blocks of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.',
     code: `
-function Welcome() {
-  return <h1>Hello, World!</h1>;
+function BemVindo() {
+  return <h1>Olá, mundo!</h1>;
 }`,
   },
   jsx: {
     title: 'JSX',
-    description:
-      'JSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript (e.g., it may output dynamic content).',
+    description: 'JSX é uma extensão de sintaxe para JavaScript. É semelhante a uma linguagem de modelo (como HTML e CSS), mas possui todo o poder do JavaScript (por exemplo, pode produzir conteúdo dinâmico).',
+      // 'JSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript (e.g., it may output dynamic content).',
     code: `
 <div>
-  <h1>Welcome {userName}</h1>
-  <p>Time to learn React!</p>
+  <h1>Bem-vindo {nomeDoUsuario}</h1>
+  <p>Hora de aprender React!</p>
 </div>`,
   },
   props: {
     title: 'Props',
-    description:
-      'Components accept arbitrary inputs called props. They are like function arguments.',
+    description: 'Componentes aceitam entradas arbitrárias chamadas props (propriedades personalizadas por você). Eles são como argumentos de função.',
+      // 'Components accept arbitrary inputs called props. They are like function arguments.',
     code: `
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
+function BemVindo(props) {
+  return <h1>Olá, {props.nome}</h1>;
 }`,
   },
   state: {
     title: 'Estado',
-    description:
-      'State allows React components to change their output over time in response to user actions, network responses, and anything else.',
+    description: 'Permite que os componentes do React alterem dados de saída ao longo do tempo em resposta a ações do usuário, respostas de rede e qualquer outra coisa.',
+      // 'State allows React components to change their output over time in response to user actions, network responses, and anything else.',
     code: `
-function Counter() {
-  const [isVisible, setIsVisible] = useState(false);
+function Contador() {
+  const [visivel, setVisivel] = useState(false);
 
   function handleClick() {
-    setIsVisible(true);
+    setVisivel(true);
   }
 
   return (
     <div>
-      <button onClick={handleClick}>Show Details</button>
-      {isVisible && <p>Amazing details!</p>}
+      <button onClick={handleClick}>Mostrar Detalhes</button>
+      {visivel && <p>Detalhes incríveis!</p>}
     </div>
   );
 }`,

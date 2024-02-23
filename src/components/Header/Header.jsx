@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header>
       <img src={logo} alt="Stylized atom" />
-      <h1>React - {key}</h1>
+      <h1>React - Conceitos</h1>
       <p>
         Não quer mais repetir várias e várias vezes trechos de código?
         <br></br>
